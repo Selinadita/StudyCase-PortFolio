@@ -22,6 +22,10 @@ section {
     color: #99775C;
 }
 
+.pa {
+    text-align: center;
+}
+
 .btn.button {
     border-color: #99775C;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
@@ -50,6 +54,79 @@ section {
 
 .about-exp-item-detail {
     display: none;
+}
+
+.work-img {
+    display: grid;
+    grid-template-columns: repeat(2, 2);
+    grid-template-areas: "work-1 work-2" "work-4 work-3";
+    gap: 16px;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+.work-img-item {
+    position: relative;
+}
+
+.work-img-item:hover:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#work-1 {
+    grid-area: work-1;
+}
+
+#work-1:hover::after {
+    content: 'Model';
+    s
+}
+
+#work-2 {
+    grid-area: work-2;
+}
+
+#work-2:hover::after {
+    content: 'Idol';
+}
+
+#work-3 {
+    grid-area: work-3;
+}
+
+#work-3:hover::after {
+    content: 'Aktor';
+}
+
+#work-4 {
+    grid-area: work-4;
+}
+
+#work-4:hover::after {
+    content: 'Idol';
+}
+
+.contact {
+    padding-bottom: 128px;
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 32px 24px;
 }
 
 @keyframes upDown {
