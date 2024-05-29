@@ -1,4 +1,65 @@
+section {
+    padding-top: 128px;
+}
+
+.body {
+    background-color: #EAE7DD;
+}
+
 .navbar {
-    background-color: white;
+    box-shadow: 0 0 0 0.5px;
+}
+
+.navbar-brand {
+    color: #99775C;
+}
+
+.collapse {
+    color: #4D4D4D;
+}
+
+.h1 {
+    color: #99775C;
+}
+
+.btn.button {
+    border-color: #99775C;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn.button:hover,
+.btn.button.active {
+    border: 3px solid #99775C;
+    background-color: #99775C;
+}
+
+.about-exp-item {
+    margin-top: 20px;
+}
+
+.about-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1ab {
+    text-align: center;
+    color: #99775C;
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
